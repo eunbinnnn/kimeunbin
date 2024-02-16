@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 소개 상세 페이지</title>
+    <style>
+         body {
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 1400px;
+            margin: auto; /* 가운데 정렬을 위해 margin을 auto로 설정 */
+        }
+        header {
+        background-color: #ffebd8;
+        color: #424242;
+        text-align: center;
+        padding: 1em;
+        margin-top: 100px;
+        }
+        section {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        article {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .navi {
+            width: 100%;
+            height: 100px;
+            background-color: #FFC5C5;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navi ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }
+
+        .navi ul li {
+            padding: 10px;  
+        }
+
+        .navi a:link, .navi a:visited {
+            display: block;
+            font-size: 16px;
+            padding: 10px;
+            text-decoration: none;
+            color: #424242;
+            transition: color 0.3s;
+        }
+
+        .navi a:hover,  .navi a:focus {
+            color: #ff6347;
+        }
+        #logo a {
+            font-weight: bold; 
+            font-size: 1.5rem;
+            color: #ff6347;
+            text-decoration: none;
+            border-style:dotted;
+        }
+        #logo a:hover{
+            color: red;
+            background-color: #FFC5C5;
+        }
+    </style>
+</head>
+<body>
+<nav class="navi">
+    <ul>
+        <li id="logo"><a href="main1.html">EB Movie</a></li>
+        <li><a href="main1.html">이용 안내</a></li>
+        <li><a href="main2_info.html">영화 소개</a></li>
+        <li><a href="main3_detail.html">예약 방법 및 요금</a></li>
+        <li><a href="main4_b.html">예약하기</a></li>
+    </ul>
+</nav> 
+   
+<header>
+    <h1>현재 상영작</h1>
+</header>
+
+<div class="container">
+    <section>
+        <article>
+            <h2>라라랜드</h2>
+            <p>꿈을 꾸는 사람들을 위한 별들의 도시 '라라랜드'. 재즈 피아니스트 '세바스찬'(라이언 고슬링)과 성공을 꿈꾸는 배우 지망생 '미아'(엠마 스톤). 인생에서 가장 빛나는 순간 만난 두 사람은 미완성인 서로의 무대를 만들어가기 시작한다.</p>
+            <img src="img/movie1.jpg" alt="영화 1 포스터" width="100%">
+        </article>
+
+        <article>
+            <h2>조커</h2>
+            <p>고담시에 사는 광대 아서 플렉은 착하게 살아보려 하지만 인생의 부조리함과 쓴 맛이 끊임없이 그를 압도한다. 짝사랑도, 커리어도 마음대로 되지 않고 자신을 향한 세상의 더러움을 견디다 못한 그는 결국 최악의 악당 조커로 재탄생한다.</p>
+            <img src="img/movie2.jpg" alt="영화 2 포스터" width="100%">
+        </article>
+
+        <article>
+            <h2>겨울왕국</h2>
+            <p>엘사는 모든 것을 얼릴 수 있는 신비한 힘을 가졌지만, 점점 제어할 수 없는 자신의 힘이 두려워 왕국을 떠난다. 이에 동생 안나는 꽁꽁 언 왕국의 저주를 풀기 위해 언니를 찾아 위대한 모험을 떠난다.</p>
+            <img src="img/movie3.jpg" alt="영화 3 포스터" width="100%">
+        </article>
+    </section>
+     </div>
+
+</body>
+</html>

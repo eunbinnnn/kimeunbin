@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 예약 사이트</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .navi {
+            width: 100%;
+            height: 100px;
+            background-color: #FFC5C5;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navi ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }
+
+        .navi ul li {
+            padding: 10px;  
+        }
+
+        .navi a:link, .navi a:visited {
+            display: block;
+            font-size: 16px;
+            padding: 10px;
+            text-decoration: none;
+            color: #424242;
+            transition: color 0.3s;
+        }
+
+        .navi a:hover,  .navi a:focus {
+            color: #ff6347;
+        }
+
+        header {
+            background-color: #ffebd8;
+            color: #424242;
+            text-align: center;
+            padding: 1em;
+            margin-top: 100px; /* 네비게이션 바의 높이와 동일하게 조정 */
+        }
+
+        #container {
+            width: 50%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #424242;
+            border-bottom: 1px dashed #424242;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p,
+        li {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #686868;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        img{
+            width: 50px;
+            float: left;
+        }
+        #logo a {
+            font-weight: bold; 
+            font-size: 1.5rem;
+            color: #ff6347;
+            text-decoration: none;
+            border-style:dotted;
+        }
+
+        #logo a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navi">
+        <ul class="abc">
+            <li id="logo"><a href="main1.html">EB Movie</a></li>
+            <li><a href="main1.html">이용 안내</a></li>
+            <li><a href="main2_info.html#movie">영화 소개</a></li>
+            <li><a href="main3_detail.html">예약 방법 및 요금</a></li>
+            <li><a href="main4_b.html">예약하기</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>예약 방법 및 요금</h1>
+    </header>
+
+    <div id="container">
+        <section id="reservationMethod">
+            <img src="img/bookingimg.png" alt="예약아이콘">
+            <h2>영화 예약 방법</h2>
+            <p>
+                영화를 예약하려면, 상단의 예약하기 > "Pick a Movie"에서 원하는 영화를 선택하세요.
+                그리고 좌석을 클릭하여 예약할 좌석을 선택해주세요.
+                선택이 완료되면 하단의 정보가 자동으로 업데이트됩니다.
+                최종적으로 "예약하기" 버튼을 클릭하여 예약을 완료하세요.
+            </p>
+        </section>
+
+        <section id="fee">
+            <img src="img/ticket.png" alt="티켓 아이콘">
+            <h2>요금</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>영화</th>
+                        <th>금액</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>어벤져스</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>조커</td>
+                        <td>$12</td>
+                    </tr>
+                    <tr>
+                        <td>라이온킹</td>
+                        <td>$8</td>
+                    </tr>
+                    <tr>
+                        <td>토이스토리</td>
+                        <td>$9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+
+</html>

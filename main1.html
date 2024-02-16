@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웰컴 은빈 무비</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            margin: auto;
+            background: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navi {
+            width: 100%;
+            height: 100px;
+            background-color: #FFC5C5;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navi ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }
+
+        .navi ul li {
+            padding: 10px;  
+        }
+
+        .navi a:link, .navi a:visited {
+            display: block;
+            font-size: 16px;
+            padding: 10px;
+            text-decoration: none;
+            color: #424242;
+            transition: color 0.3s;
+        }
+
+        .navi a:hover,  .navi a:focus {
+            color: #ff6347;
+        }
+
+        .content {
+            margin: 80px auto;
+            width: 80%;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #logo a {
+            font-weight: bold; 
+            font-size: 1.5rem;
+            color: #ff6347;
+            text-decoration: none;
+            border-style:dotted;
+        }
+
+        #logo a:hover {
+            color: #fff;
+        }
+
+        h2 {
+            color: #ff6347;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        img{
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navi">
+        <ul>
+            <li id="logo"><a href="main1.html">EB Movie</a></li>
+            <li><a href="#intro">이용 안내</a></li>
+            <li><a href="main2_info.html#movie">영화 소개</a></li>
+            <li><a href="main3_detail.html">예약 방법 및 요금</a></li>
+            <li><a href="main4_b.html">예약하기</a></li>
+        </ul>
+    </nav> 
+
+    <div class="container">
+        <div id="intro" class="content">
+            <img src="img/thea.png" alt="상영관이미지">
+            <h2>환영합니다!</h2>
+            <p>
+                EB Movie에 오신 여러분을 환영합니다. 최신 영화 정보를 확인하고 편리하게 예약하세요.
+            </p>
+            <br><hr>
+            <h2>이용안내</h2>
+            <p>
+                "영화 소개"에서는 다양한 영화 정보를 확인하실 수 있으며, <br>
+                "예약 방법 및 요금"에서는 예약 절차와 가격 정보를 확인할 수 있습니다. <br>
+                <br>
+                영화 예매를 원하신다면 메뉴에서 "예약하기"를 클릭하여 간편하게 진행할 수 있습니다.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

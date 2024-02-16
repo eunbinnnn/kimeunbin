@@ -1,0 +1,201 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+#box{
+    background-color: #a3cca2;
+    color: #fff;
+    width: 50%;
+    margin: 30px auto;
+ }
+ #container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+ 
+ }
+ .occupied{
+    display: inline-block;
+ }
+ .movieContainer{
+    margin: 20px 0px;
+    font-size: 1.2rem;
+ }
+ .seatContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .showcase{
+    background-color: #777;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 50%;
+    justify-content: center;
+    margin: 16px auto;
+    padding: 5px 10px;
+    display: flex;
+    font-size: 1.2rem;
+ }
+ .movieContainer select{
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 7px;
+    appearance: none;
+    border: 0;
+    font-size: large;
+ }
+ .movieContainer select option{
+    text-align: left;
+ }
+ li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+ }
+ .small {
+    color: #777;
+    margin-left: 2px;
+ }
+
+ .seat{
+    display: inline-block;
+    background-color: #444451;
+    width: 15px;
+    height: 12px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+ }
+ .availableSeat{
+    display: inline-block;
+    background-color: #444451;
+    width: 15px;
+    height: 12px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: default;
+ }
+
+ .occupiedSeat{
+    display: inline-block;
+    background-color: #fff;
+    width: 15px;
+    height: 12px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+
+ .seat:nth-child(7){
+    margin-left: 20px;
+}
+.occupiedSeat:nth-child(7){
+    margin-left: 20px;
+}
+.seat:nth-child(3){
+    margin-left: 20px;
+}
+.occupiedSeat:nth-child(3){
+    margin-left: 20px;
+}
+
+ .text{
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #747474;
+ }
+ #count{
+    color: #c1ff71;
+ }
+ #costs{
+    color: #ffc59f;
+ }
+ .screen {
+    margin: 20px;
+    padding: 5px;
+    width: 140px;
+    height: 0px;
+    border-top: 100px solid wheat;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: relative; 
+}
+
+.screen::before {
+    content: "SCREEN";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -280%);
+    font-size: 18px; 
+    color: #a3cca2; 
+    /* 스크린 네모 위에 글자쓰고 싶어서 만든 스타일 */
+}
+/*네비게이션 추가와 함께 들어온 스타일 */
+.navi {
+    width: 100%;
+    height: 100px;
+    background-color: #FFC5C5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navi ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.navi ul li {
+    padding: 10px;  
+}
+
+.navi a:link, .navi a:visited {
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+    color: #424242;
+    transition: color 0.3s;
+}
+
+.navi a:hover,  .navi a:focus {
+    color: #ff6347;
+}
+
+header {
+    background-color: #ffebd8;
+    color: #424242;
+    text-align: center;
+    padding: 1em;
+    margin-top: 100px;
+}
+#logo a:hover{
+    color: red;
+    background-color: #FFC5C5;
+}
+#logo a {
+   font-weight: bold; 
+   font-size: 1.5rem;
+   color: #ff6347;
+   text-decoration: none;
+   border-style:dotted;
+}

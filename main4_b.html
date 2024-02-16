@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking System</title>
+ 
+    <link rel="stylesheet" href="css/style_booking.css">
+    <script defer src="js/script_booking.js"></script>
+</head>
+
+<body>
+    <nav class="navi">
+        <ul class="abc">
+            <li id="logo"><a href="main1.html">EB Movie</a></li>
+            <li><a href="main1.html">이용 안내</a></li>
+            <li><a href="main2_info.html#movie">영화 소개</a></li>
+            <li><a href="main3_detail.html">예약 방법 및 요금</a></li>
+            <li><a href="main4_b.html">예약하기</a></li>
+        </ul>
+    </nav> 
+
+    <header>
+        <h1>원하는 영화와 좌석을 선택하세요</h1>
+    </header>
+
+    <div id="box">
+        <div id="container">
+            <div class="movieContainer">
+                <label for="movie">Pick a Movie</label>
+                <select name="pickMovie" id="movie">
+                    <option class="price" value="10">라라랜드($10)</option>
+                    <option class="price" value="12">조커($12)</option>
+                    <option class="price" value="8">겨울왕국($8)</option>
+                    <option class="price" value="9">토이스토리($9)</option>
+                </select>
+            </div>
+        </div>
+
+        <ul class="showcase">
+            <li>
+                <div class="availableSeat"></div>
+                <small class="small">Available Seat</small>
+            </li>
+            <li>
+                <div class="occupiedSeat"></div>
+                <small class="small">Occupied Seat</small>
+            </li>
+        </ul>
+    
+        <div class="seatContainer">
+            <div class="screen"></div>
+        </div>
+        
+        <p class="text">You have selected <span id="count">0</span>
+            seats for a price of $ <span id="costs">0</span>
+        </p>
+        
+    </div>
+</body>
+</html>
